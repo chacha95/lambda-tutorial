@@ -13,5 +13,5 @@ pipenv shell
 ## dev
 
 ```
-sls deploy
+npm run deploy:dev:use1
 ```
