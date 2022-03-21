@@ -5,7 +5,7 @@ frameworkVersion: '2 || 3'
 
 provider:
   name: aws
-  runtime: python3.8
+  runtime: python3.7
   environment:
     ACCOUNT_ID: '#{AWS::AccountId}'
     REGION: '#{AWS::Region}'
