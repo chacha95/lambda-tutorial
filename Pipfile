@@ -1,0 +1,22 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+mypy = "*"
+pytest = "*"
+pytest-cov = "*"
+boto3-stubs = {extras = ["stepfunctions"], version = "*"}
+types-requests = "*"
+diagrams = "*"
+
+[packages]
+boto3 = "*"
+requests = "*"
+pydantic = "*"
+pynamodb = "*"
+pynamodb-attributes = "*"
+
+[requires]
+python_version = "3.8"

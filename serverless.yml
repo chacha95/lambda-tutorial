@@ -1,0 +1,33 @@
+org: jhcha
+app: lambda-tutorial
+service: lambda-tutorial
+frameworkVersion: '2 || 3'
+
+provider:
+  name: aws
+  runtime: python3.8
+  environment:
+    ACCOUNT_ID: '#{AWS::AccountId}'
+    REGION: '#{AWS::Region}'
+    ENV: ${opt:stage}
+
+functions:
+  hello:
+    handler: src.handler.hello
+    events:
+      - httpApi:
+          path: /
+          method: get
+
+pythonRequirements:
+  dockerizePip: non-linux
+
+package:
+  exclude:
+    - node_modules/**
+    - .venv/**
+    - .vscode/**
+  excludeDevDependencies: false
+
+plugins:
+  - serverless-python-requirements

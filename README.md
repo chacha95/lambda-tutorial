@@ -13,6 +13,5 @@ pipenv shell
 ## dev
 
 ```
-npm run deploy:dev:apne2
-npm run deploy:dev:use1
+sls deploy
 ```

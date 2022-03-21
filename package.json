@@ -1,11 +1,8 @@
 {
-  "name": "shiba",
+  "name": "lambda-tutorial",
   "description": "",
   "version": "0.1.0",
   "scripts": {
-    "deploy:dev:apne2": "AWS_PROFILE=suite-dev sls deploy --region ap-northeast-2 --stage dev",
-    "remove:dev:apne2": "AWS_PROFILE=suite-dev sls remove --region ap-northeast-2 --stage dev",
-    "prune:dev:apne2": "AWS_PROFILE=suite-dev sls prune -n 10 --region ap-northeast-2 --stage dev",
     "deploy:dev:use1": "AWS_PROFILE=suite-dev sls deploy --region us-east-1 --stage dev",
     "remove:dev:use1": "AWS_PROFILE=suite-dev sls remove --region us-east-1 --stage dev",
     "prune:dev:use1": "AWS_PROFILE=suite-dev sls prune -n 10 --region us-east-1 --stage dev"
