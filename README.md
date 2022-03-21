@@ -1,22 +1,12 @@
-<p align="center">
-  <img src="https://img.icons8.com/fluent/96/000000/doge.png" alt="shiba" width="96px" height="96px"/>
-  <br>
-  <i>Shiba</i>
-  <br/>
-</p>
+# Pipenv
 
-<p align="center">
-  <a href="https://superb-ai.com"><strong>superb-ai.com</strong></a>
-  <br>
-</p>
+## install
 
-<h1 align="center" style="font-size:300%;">Shiba</h1>
+PIPENV_VENV_IN_PROJECT=1 pipenv install --dev
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+## active shell
 
-### System Architecture Diagram
-
-<img src="docs/diagrams/shiba_pipeline.png" width="750px">
+pipenv shell
 
 # Deployment
 
