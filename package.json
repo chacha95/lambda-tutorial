@@ -3,15 +3,15 @@
   "description": "",
   "version": "0.1.0",
   "scripts": {
-    "deploy:dev:use1": "AWS_PROFILE=suite-dev sls deploy --region us-east-1 --stage dev",
-    "remove:dev:use1": "AWS_PROFILE=suite-dev sls remove --region us-east-1 --stage dev",
-    "prune:dev:use1": "AWS_PROFILE=suite-dev sls prune -n 10 --region us-east-1 --stage dev"
+    "deploy:dev:ap-norteast2": "AWS_PROFILE=suite-dev sls deploy --region ap-northeast-2 --stage dev",
+    "remove:dev:ap-norteast2": "AWS_PROFILE=suite-dev sls remove --region ap-northeast-2 --stage dev",
+    "prune:dev:ap-norteast2": "AWS_PROFILE=suite-dev sls prune -n 10 --region ap-northeast-2 --stage dev"
   },
-  "dependencies": {},
   "devDependencies": {
     "serverless": "2.72.2",
     "serverless-prune-plugin": "^1.6.1",
     "serverless-pseudo-parameters": "2.5.0",
-    "serverless-python-requirements": "5.1.0"
+    "serverless-python-requirements": "5.1.0",
+    "serverless-step-functions": "^3.8.0"
   }
 }
